@@ -50,5 +50,5 @@ jobs:
         with:
           app-name: 'Teamazure1'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_1dc92402193b43779e033b00b293a19e }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_bef0ea58d28c4f8e9ec055ffaeec5bb8 }}
           package: '*.jar'
