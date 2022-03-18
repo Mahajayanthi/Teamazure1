@@ -2,7 +2,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy JAR app to Azure Web App - Teamazure1
+name: Build and deploy JAR app to Azure Web App - Teamazure2
 
 on:
   push:
@@ -48,7 +48,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'Teamazure1'
+          app-name: 'Teamazure2'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_a8a8aa914bd74e13b8e5ae95a1b462c3 }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_c0ddb04772924f0fb9a5a7aff1134741 }}
           package: '*.jar'
