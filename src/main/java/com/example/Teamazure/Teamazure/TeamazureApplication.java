@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TeamazureApplication {
 	@GetMapping("/azure")
 	public String message() {
-		return "Azure Web Apps Service - Build & Deployed Successfully using Azure Pipeline".
+		return "Azure Web Apps Service - Build & Deployed Successfully using Azure Pipeline".;
 		//The main aim of the project is to deploy the same code in GCP and Azure platform.\r\n";
 // 				+ "\r\n"
 		
