@@ -3,9 +3,15 @@ pipeline {
     stages {
         stage('git repo & clean') {
             steps {
-               bat "rmdir  /s /q Teamazure1"
-                bat "git clone https://github.com/Mahajayanthi/Teamazure1.git"
-                bat "mvn clean -f Teamazure1"
+                script {
+                    // Check if directory exists before removing it
+                    if (fileExists('Teamazure1')) {
+                        bat "rmdir /s /q Teamazure1"
+                    }
+                    
+                    bat "git clone https://github.com/Mahajayanthi/Teamazure1.git"
+                    bat "mvn clean -f Teamazure1"
+                }
             }
         }
         stage('install') {
